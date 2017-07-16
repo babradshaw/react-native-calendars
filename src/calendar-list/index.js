@@ -251,12 +251,12 @@ class CalendarList extends Component {
                 //snapToAlignment='start'
                 //snapToInterval={calendarHeight}
         pageSize={1}
-        removeClippedSubviews
         onChangeVisibleRows={this.visibleRowsChange.bind(this)}
         renderRow={this.renderCalendar.bind(this)}
         showsVerticalScrollIndicator={false}
         onLayout={this.onLayout.bind(this)}
         scrollEnabled={this.props.scrollingEnabled !== undefined ? this.props.scrollingEnabled : true}
+        removeClippedSubviews={false}
       />
     );
   }
