@@ -340,6 +340,7 @@ export default class AgendaView extends Component {
             [{ nativeEvent: { contentOffset: { y: this.state.scrollY } } }],
             { useNativeDriver: true },
           )}
+          removeClippedSubviews={false}
         >
           <View style={{height: agendaHeight + KNOB_HEIGHT}}/>
         </Animated.ScrollView>
